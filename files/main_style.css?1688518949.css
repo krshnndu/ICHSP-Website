@@ -309,3 +309,74 @@ table, th, td {
     border-collapse: collapse;
     padding: 15px;
  }
+
+ .container {
+    margin-top: 20px;
+}
+
+.container h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+
+.facts i {
+    color: rgb(0, 0, 0);
+    font-size: 3em;
+}
+.facts h3 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: 400;
+}
+
+ /* 
+  * 3.5 Helper Class: background
+  */
+ .bg-image,
+ .bg-image-1,
+ .bg-image-1 {
+   position: relative;
+ }
+ .bg-image::before,
+ .bg-image-1::before,
+ .bg-image-1::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+ }
+ 
+ .bg-image-1 {
+   background: url(/uploads/1/4/4/2/144252428/background-images/IIM-Ranchi.jpg) no-repeat center center/cover;
+ }
+ .bg-image-1::before {
+   background-color: rgba(23, 13, 13, 0.7);
+ }
+ 
+ @media (min-width: 768px) {
+   .section {
+     padding: 90px 0;
+   }
+ 
+   .section-title {
+     color: #313131;
+     letter-spacing: 1px;
+     margin: 0 0 60px;
+     text-transform: uppercase;
+     text-align: left;
+   }
+ }
+ 
+
+
+ 
