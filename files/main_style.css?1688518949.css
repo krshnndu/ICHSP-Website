@@ -304,3 +304,8 @@ div.paragraph ol, div.paragraph ol li { list-style: decimal outside !important; 
 .product-grid .product-grid-image .product-grid__image-sale-banner-wrapper {background: #991723;}
 #wsite-com-category-product-group .category__image-sale-banner-wrapper {background: #991723;}
 #wsite-search-product-results .wsite-search-product-result .wsite-search-product-image-container .search__image-sale-banner-wrapper {background: #991723;}
+table, th, td {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    padding: 15px;
+ }
