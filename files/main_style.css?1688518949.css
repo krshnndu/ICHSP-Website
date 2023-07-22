@@ -4,6 +4,11 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
 
 
 @font-face {
+  font-family: 'Montserrat Extra Bold';
+  src: url('/fonts/Montserrat-ExtraBold.ttf') format('ttf');
+}
+
+@font-face {
   font-family: 'San Francisco Regular';
   src: url('/fonts/san_francisco-webfont.woff2') format('woff2'),
        url('/fonts/san_francisco-webfont.woff') format('woff');
