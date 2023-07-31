@@ -111,7 +111,7 @@ body { width: 100%; height: 100%; min-height: 100%; background: white; color: #8
  .banner-wrap .banner .wsite-button-highlight:hover .wsite-button-inner, .banner-wrap .banner .wsite-button-large.wsite-button-highlight:hover .wsite-button-inner { background: #7eb8e5; color: white !important; border: 2px solid #7eb8e5; }
  .main-wrap { width: 100%; transition: all 100ms ease; }
  .main-wrap .container { padding: 70px 0; box-sizing: border-box; }
- .paragraph { margin: 0 auto 25px; }
+ .paragraph { margin: 0 auto 25px; text-align: justify;}
  .footer-wrap { width: 100%; border-top: 2px solid #dcdcdc; }
  .footer-wrap .wsite-footer { max-width: 100%; width: 1024px; margin: 0 auto; padding: 40px 0 20px; box-sizing: border-box; }
  .footer-wrap h2 { margin: 0 0 5px; color: #888888; font-family: 'San Francisco', Arial, sans-serif; font-size: 15px; font-weight: normal; line-height: normal; }
