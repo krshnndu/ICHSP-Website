@@ -19,33 +19,110 @@
   <link href='https://cdn2.editmysite.com/fonts/Quicksand/font.css?2' rel='stylesheet' type='text/css' />
   <link href='https://cdn2.editmysite.com/fonts/Oxygen/font.css?2' rel='stylesheet' type='text/css' />
   <style type='text/css'>
-    /* CSS styles go here */
-  </style>
+	.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-family:'San Francisco', Arial, sans-serif !important;letter-spacing: 0px !important;}
+	#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+	.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+	.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-family:'San Francisco', Arial, sans-serif !important;font-weight:700 !important;text-transform:  none !important;}
+	#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {color:#3f3f3f !important;}
+	.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+	#wsite-title {font-family:"Quicksand" !important;}
+	.wsite-footer h2 a, .wsite-footer .paragraph a, .wsite-footer blockquote a {color:#515151 !important;}
+	.wsite-menu-default a {}
+	.wsite-menu a {}
+	.wsite-image div, .wsite-caption {}
+	.galleryCaptionInnerText {}
+	.fancybox-title {}
+	.wslide-caption-text {}
+	.wsite-phone {}
+	.wsite-headline,.wsite-header-section .wsite-content-title {font-family:"Playfair Display Extrabold" !important;font-weight:700 !important;}
+	.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+	.wsite-button-inner {}
+	.wsite-not-footer blockquote {}
+	.wsite-footer blockquote {}
+	.blog-header h2 a {}
+	#wsite-content h2.wsite-product-title {}
+	.wsite-product .wsite-product-price a {}
+	@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-size:18px !important;}
+	#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+	.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+	.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-size:50px !important;line-height:50px !important;}
+	#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+	.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+	#wsite-title {}
+	.wsite-menu-default a {}
+	.wsite-menu a {}
+	.wsite-image div, .wsite-caption {}
+	.galleryCaptionInnerText {}
+	.fancybox-title {}
+	.wslide-caption-text {}
+	.wsite-phone {}
+	.wsite-headline,.wsite-header-section .wsite-content-title {font-size:80px !important;line-height:75px !important;}
+	.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+	.wsite-button-inner {}
+	.wsite-not-footer blockquote {}
+	.wsite-footer blockquote {}
+	.blog-header h2 a {}
+	#wsite-content h2.wsite-product-title {}
+	.wsite-product .wsite-product-price a {}
+	}</style>
+	<!-- <style>
+	.wsite-background {background-image: url("uploads/1/4/4/2/144252428/background-images/91018499.jpeg") !important;background-repeat: no-repeat !important;background-position: 50% 50% !important;background-size: 100% !important;background-color: transparent !important;background: inherit;}
+	body.wsite-background {background-attachment: fixed !important;}.wsite-background.wsite-custom-background{ background-size: cover !important}
+	</style> -->
+			<script src='main.js'></script>
+	<script>
+	var STATIC_BASE = '//cdn1.editmysite.com/';
+	var ASSETS_BASE = '//cdn2.editmysite.com/';
+	var STYLE_PREFIX = 'wsite';
+	</script>
+	<script src='https://cdn2.editmysite.com/js/jquery-1.8.3.min.js'></script>
+	
+	<script type="text/javascript" src="https://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1688151424&amp;"></script>
+	<script src="https://cdn2.editmysite.com/js/site/main.js?buildTime=1688151424"></script><script type="text/javascript">
+			function initCustomerAccountsModels() {
+						(function(){_W.setup_rpc({"url":"\/ajax\/api\/JsonRPC\/CustomerAccounts\/","actions":{"CustomerAccounts":[{"name":"login","len":2,"multiple":false,"standalone":false},{"name":"logout","len":0,"multiple":false,"standalone":false},{"name":"getSessionDetails","len":0,"multiple":false,"standalone":false},{"name":"getAccountDetails","len":0,"multiple":false,"standalone":false},{"name":"getOrders","len":0,"multiple":false,"standalone":false},{"name":"register","len":4,"multiple":false,"standalone":false},{"name":"emailExists","len":1,"multiple":false,"standalone":false},{"name":"passwordReset","len":1,"multiple":false,"standalone":false},{"name":"passwordUpdate","len":3,"multiple":false,"standalone":false},{"name":"validateSession","len":1,"multiple":false,"standalone":false}]},"namespace":"_W.CustomerAccounts.RPC"});
+	_W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":"_W.CustomerAccounts.BackboneModelData","collection_namespace":"_W.CustomerAccounts.BackboneCollectionData","bootstrap_namespace":"_W.CustomerAccounts.BackboneBootstrap","models":{"CustomerAccounts":{"_class":"CustomerAccounts.Model.CustomerAccounts","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"CustomerAccounts":{"_class":"CustomerAccounts.Collection.CustomerAccounts"}},"bootstrap":[]});
+	})();
+			}
+			if(document.createEvent && document.addEventListener) {
+				var initEvt = document.createEvent('Event');
+				initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+				document.dispatchEvent(initEvt);
+			} else if(document.documentElement.initCustomerAccountsModels === 0){
+				document.documentElement.initCustomerAccountsModels++
+			}
+			</script>
+			<script type="text/javascript"> _W = _W || {}; _W.securePrefix='www.photonics2023.net'; </script><script>_W = _W || {};
+				_W.customerLocale = "en_US";
+				_W.storeName = null;
+				_W.isCheckoutReskin = false;
+				_W.storeCountry = "IN";
+				_W.storeCurrency = "USD";
+				_W.storeEuPrivacyPolicyUrl = "";
+				com_currentSite = "871577878540381930";
+				com_userID = "144252428";</script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+	<script type="text/javascript" src="https://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1688151424&amp;"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"><!--
+		
+		
+		function initFlyouts(){
+			initPublishedFlyoutMenus(
+				[{"id":"656922112522586826","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"196378651222282508","title":"Submission","url":"submission.html","target":"","nav_menu":false,"nonclickable":false},{"id":"143021946161004408","title":"Key Dates","url":"key-dates.html","target":"","nav_menu":false,"nonclickable":false},{"id":"550740388284470589","title":"Topics","url":"topics.html","target":"","nav_menu":false,"nonclickable":false},{"id":"226770777852207953","title":"Speakers","url":"speakers.html","target":"","nav_menu":false,"nonclickable":false},{"id":"652924617551956352","title":"Program","url":"program.html","target":"","nav_menu":false,"nonclickable":false},{"id":"870783951647352049","title":"Registration","url":"registration.html","target":"","nav_menu":false,"nonclickable":false},{"id":"705345633234062232","title":"Travel and Accommodation","url":"travel-and-accommodation.html","target":"","nav_menu":false,"nonclickable":false},{"id":"642001691655293837","title":"Tutorial Session","url":"tutorial-session.html","target":"","nav_menu":false,"nonclickable":false},{"id":"972976655271578223","title":"Industry Sponsorship","url":"industry-sponsorship.html","target":"","nav_menu":false,"nonclickable":false},{"id":"282103523926622606","title":"Committees","url":"committees.html","target":"","nav_menu":false,"nonclickable":false},{"id":"358896430690322190","title":"Gallery","url":"gallery.html","target":"","nav_menu":false,"nonclickable":false},{"id":"278256367127187079","title":"Doctoral Symposium","url":"doctoral-symposium.html","target":"","nav_menu":false,"nonclickable":false},{"id":"962402474867960245","title":"Code of Conduct","url":"code-of-conduct.html","target":"","nav_menu":false,"nonclickable":false}],
+				"143021946161004408",
+				'',
+				'active',
+				false,
+				{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+				{}
+			)
+		}
+	//-->
+	</script>
 
   <!-- JavaScript imports go here -->
 </head>
 
-<body class="header-page page-has-banner wsite-theme-light wsite-page-travel-and-accommodation header-overlay-off header-animation-on">
-  <!-- Banner section (commented out for now)
-  <div class="banner-wrap">
-    <div class="wsite-elements wsite-not-footer wsite-header-elements">
-      <div class="wsite-section-wrap">
-        <div class="wsite-section wsite-header-section wsite-section-bg-image" style="background-image: url(https://www.photonics2023.net/uploads/1/4/4/2/144252428/background-images/1950804983.jpg); background-repeat: no-repeat; background-position: 50% 50%; background-size: 100%; background-color: transparent; background-size: cover;">
-          <div class="wsite-section-content">
-            <div class="container">
-              <div class="banner">
-                <div class="wsite-section-elements">
-                  <h2 class="wsite-content-title" style="text-transform: none;">Contact Us<br /></h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class=""></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  -->
+<body style="background-color: #f5faef;" class="header-page page-has-banner wsite-theme-light wsite-page-travel-and-accommodation header-overlay-off header-animation-on">
+
 
   <!-- Header section (navigation) -->
   <div class="dusk-header">
@@ -83,7 +160,7 @@
         </div>
 
         <!-- Hamburger menu button (mobile) -->
-        <a class="hamburger" aria-label="Menu" href="travel-and-accommodation.html#"><span></span></a>
+        <a class="hamburger" aria-label="Menu" href="contact-us.html"><span></span></a>
       </div><!-- end container -->
     </div><!-- end nav-wrap -->
   </div><!-- end dusk-header -->
@@ -135,52 +212,256 @@
     <p class="email">happinessconference@iimranchi.ac.in</p>
   </div>
 
-  <!-- Footer section (commented out for now)
-  <footer id="footer">
-    <div class="footer-wrap">
-      <div class="container">
-        <div class="footer">
-          <div class="wsite-elements wsite-footer-elements">
-            <div class="wsite-section-wrap">
-              <div class="wsite-section wsite-footer-section wsite-footer-sitemap" style="text-align: center;">
-                <div class="wsite-section-content">
-                  <ul class="wsite-menu-default" role="navigation">
-                    <li id="pg793591803155546326" class="wsite-menu-item-wrap">
-                      <a href="about.html" class="wsite-menu-item">About</a>
-                    </li>
-                    <li id="pg322596108987215228" class="wsite-menu-item-wrap">
-                      <a href="privacy-policy.html" class="wsite-menu-item">Privacy Policy</a>
-                    </li>
-                    <li id="pg299593078116695155" class="wsite-menu-item-wrap">
-                      <a href="cookie-policy.html" class="wsite-menu-item">Cookie Policy</a>
-                    </li>
-                    <li id="pg179643343105810284" class="wsite-menu-item-wrap">
-                      <a href="terms-of-service.html" class="wsite-menu-item">Terms of Service</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div style="text-align: center; margin-top: 10px;">
-            <span class="wsite-social wsite-social-default" style="display: inline-block; margin-right: 5px;">
-              <a class="wsite-social-item wsite-social-facebook" href="https://www.facebook.com/ICHSP/" target="_blank" rel="noopener noreferrer">
-                <span class="wsite-social-item-inner"></span>
-              </a>
-            </span>
-            <span class="wsite-social wsite-social-default" style="display: inline-block; margin-right: 5px;">
-              <a class="wsite-social-item wsite-social-twitter" href="https://twitter.com/ichsp2023" target="_blank" rel="noopener noreferrer">
-                <span class="wsite-social-item-inner"></span>
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  -->
+  <div class="nav mobile-nav"><ul class="wsite-menu-default">
+	<li id="pg656922112522586826" class="wsite-menu-item-wrap">
+		<a
+					href="index.html"
+			class="wsite-menu-item"
+			>
+			Home
+		</a>
+		
+	</li>
+	<li id="pg143021946161004408" class="wsite-menu-item-wrap">
+		<a
+					href="call-for-papers.html"
+			class="wsite-menu-item"
+			>
+			Call for Papers
+		</a>
+		
+	</li>
+	<li id="pg652924617551956352" class="wsite-menu-item-wrap">
+		<a
+					href="important-dates.html"
+			class="wsite-menu-item"
+			>
+			Important Dates
+		</a>
+		
+	</li>
+	<li id="pg870783951647352049" class="wsite-menu-item-wrap">
+		<a
+					href="registration.html"
+			class="wsite-menu-item"
+			>
+			Registration
+		</a>
+		
+	</li>
+	<li id="pg282103523926622606" class="wsite-menu-item-wrap">
+		<a
+					href="organising-team.html"
+			class="wsite-menu-item"
+			>
+			Organising Team
+		</a>
+		
+	</li>
+	<li id="active" class="wsite-menu-item-wrap">
+		<a
+					href="contact-us.html"
+			class="wsite-menu-item"
+			>
+			Contact Us
+		</a>
+		
+	</li>
+</ul>
+</ul>
+</div>
 
-  <!-- JavaScript imports go here -->
+
+
+<script type="text/javascript" src="files/theme/plugins.js%3F1583952700"></script>
+<script type="text/javascript" src="files/theme/custom.js%3F1583952700"></script>
+<div id="customer-accounts-app"></div>
+<script src="https://cdn2.editmysite.com/js/site/main-customer-accounts-site.js?buildTime=1688151424"></script>
+
+	<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7870337-1']);
+_gaq.push(['_setDomainName', 'none']);
+_gaq.push(['_setAllowLinker', true]);
+
+(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	// NOTE: keep the [1] if you replace this code. Otherwise cookie banner scripts won't be first on the page
+	var s = document.getElementsByTagName('script')[1]; s.parentNode.insertBefore(ga, s);
+})();
+
+_W.Analytics = _W.Analytics || {'trackers': {}};
+_W.Analytics.trackers.wGA = '_gaq';
+</script>
+
+<script type="text/javascript" async=1>
+// NOTE: keep the getElementsByTagName(o)**[1]** if you replace this code. Otherwise cookie banner scripts won't be first on the page
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+		p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+		};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[1];n.async=1;
+		n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,'script','//cdn2.editmysite.com/js/wsnbn/snowday262.js','snowday'));
+
+var r = [99, 104, 101, 99, 107, 111, 117, 116, 46, 40, 119, 101, 101, 98, 108, 121, 124, 101, 100, 105, 116, 109, 121, 115, 105, 116, 101, 41, 46, 99, 111, 109];
+var snPlObR = function(arr) {
+	var s = '';
+	for (var i = 0 ; i < arr.length ; i++){
+		s = s + String.fromCharCode(arr[i]);
+	}
+	return s;
+};
+var s = snPlObR(r);
+
+var regEx = new RegExp(s);
+
+_W.Analytics = _W.Analytics || {'trackers': {}};
+_W.Analytics.trackers.wSP = 'snowday';
+_W.Analytics.user_id = '144252428';
+_W.Analytics.site_id = '871577878540381930';
+
+var drSegmentsTag = document.getElementById('drSegments');
+if (drSegmentsTag) {
+	_W.Analytics.spContexts = _W.Analytics.spContexts || [];
+
+	var segmentData = JSON.parse(drSegmentsTag.innerText);
+	segmentData.forEach(function(test) {
+		_W.Analytics.spContexts.push({
+			schema: "iglu:com.weebly/context_ab_segment/jsonschema/1-0-0",
+			data: {
+				test_id: test.name,
+				segment: test.variant,
+			}
+		});
+	});
+}
+
+
+(function(app_id, ec_hostname, discover_root_domain) {
+	var track = window[_W.Analytics.trackers.wSP];
+	if (!track) return;
+	track('newTracker', app_id, ec_hostname, {
+		appId: app_id,
+		post: true,
+		platform: 'web',
+		discoverRootDomain: discover_root_domain,
+		cookieName: '_snow_',
+		contexts: {
+			webPage: true,
+			performanceTiming: true,
+			gaCookies: true
+		},
+		crossDomainLinker: function (linkElement) {
+			return regEx.test(linkElement.href);
+		},
+		respectDoNotTrack: true
+	});
+	track('trackPageView', _W.Analytics.user_id+':'+_W.Analytics.site_id, _W.Analytics.spContexts);
+	track('crossDomainLinker', function (linkElement) {
+		return regEx.test(linkElement.href);
+	});
+})(
+	'_wn',
+	'ec.editmysite.com',
+	true
+);
+</script>
+
+
+
+
+
+<script>
+(function(jQuery) {
+	try {
+		if (jQuery) {
+			jQuery('div.blog-social div.fb-like').attr('class', 'blog-social-item blog-fb-like');
+			var $commentFrame = jQuery('#commentArea iframe');
+			if ($commentFrame.length > 0) {
+				var frameHeight = jQuery($commentFrame[0].contentWindow.document).height() + 50;
+				$commentFrame.css('min-height', frameHeight + 'px');
+			}
+			if (jQuery('.product-button').length > 0){
+				jQuery(document).ready(function(){
+					jQuery('.product-button').parent().each(function(index, product){
+						if(jQuery(product).attr('target') == 'paypal'){
+							if (!jQuery(product).find('> [name="bn"]').length){
+								jQuery('<input>').attr({
+									type: 'hidden',
+									name: 'bn',
+									value: 'DragAndDropBuil_SP_EC'
+								}).appendTo(product);
+							}
+						}
+					});
+				});
+			}
+		}
+		else {
+			// Prototype
+			$$('div.blog-social div.fb-like').each(function(div) {
+				div.className = 'blog-social-item blog-fb-like';
+			});
+			$$('#commentArea iframe').each(function(iframe) {
+				iframe.style.minHeight = '410px';
+			});
+		}
+	}
+	catch(ex) {}
+})(window._W && _W.jQuery);
+</script>
+
+<script>
+window._W.isEUUser = false;
+window._W.showCookieToAll = "";
+</script>
+
+<script>
+(function(jQuery) {
+	try {
+		function forceShowCcLinks() {
+			var ccLinks = document.querySelector('.cc_links');
+			if (!ccLinks) {
+				return;
+			}
+
+			var ccLinksVisible = jQuery(ccLinks).is(':visible');
+			if (ccLinksVisible) {
+				return;
+			}
+
+
+			ccLinks.style.display = 'block';
+
+			var ccParent = ccLinks.parentElement;
+
+			var ccParentVisible = jQuery(ccParent).is(':visible');
+			if (ccParentVisible) {
+				return;
+			}
+
+			ccParent.style.display = 'block';
+
+			var ccGrandparent = ccParent.parentElement;
+			var ccGrandparentVisible = jQuery(ccGrandparent).is(':visible');
+			if (ccGrandparentVisible) {
+				return;
+			}
+			ccGrandparent.style.display = 'block';
+
+		}
+
+		function forceShowCcLinksForever() {
+			var tenSeconds = 10000;
+			forceShowCcLinks();
+			setTimeout(forceShowCcLinksForever, tenSeconds);
+		}
+
+		jQuery(document).ready(forceShowCcLinksForever);
+	}
+	catch(ex) {}
+})(window._W && _W.jQuery);
+</script>
+
+
 </body>
-
 </html>
