@@ -51,8 +51,8 @@ p {
 }
 
 body { width: 100%; height: 100%; min-height: 100%; background: white; color: #888888; font-family: 'San Francisco', Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
- a { color: #a1b7de; text-decoration: none; }
- a:hover { color: #a1b7de }
+ a { color: #8e98cd; text-decoration: none; }
+ a:hover { color: #8e98cd }
  a img { border: 0; }
  h2 { color: #333333; margin-bottom: 15px; font-family: "San Francisco"; font-size: 25px; font-weight: 400; line-height: 40px; }
  div.paragraph { color: #888888; font-family: "San Francisco"; font-size: 16px; font-weight: 400; line-height: 30px; text-align: justify;}
@@ -96,7 +96,7 @@ body { width: 100%; height: 100%; min-height: 100%; background: white; color: #8
  .wsite-background, .wsite-header-section { background: url(/img/background-images/img/background-images/home-bg.png) center center no-repeat; background-size: cover; }
  .wsite-section-bg-color:before, body.header-overlay-off .wsite-header-section:before, body.header-overlay-off .wsite-background:before { display: none; }
  .banner-wrap { position: relative; width: 100%; }
- .wsite-header-section:before { content: ''; position: absolute; top: 0; left: 0; width: 100%; min-height: 100%; height: inherit; background: #a1b7de; }
+ .wsite-header-section:before { content: ''; position: absolute; top: 0; left: 0; width: 100%; min-height: 100%; height: inherit; background: #8e98cd; }
  .wsite-section-bg-color:before { display: none; }
  .banner-wrap .container { position: relative; display: table; height: 100%; padding: 100px 0; }
  .banner-wrap .banner { display: table-cell; padding: 0; opacity: 1; vertical-align: middle; text-align: center; -webkit-transition: all 500ms ease; -moz-transition: all 500ms ease; -ms-transition: all 500ms ease; -o-transition: all 500ms ease; transition: all 500ms ease; }
@@ -144,7 +144,7 @@ body { width: 100%; height: 100%; min-height: 100%; background: white; color: #8
  .wsite-button-large .wsite-button-inner, .wsite-editor .wsite-button-large .wsite-button-inner { display: inline-block; height: auto; padding: 12px 24px; background: #c4c4c4; color: white !important; border: 2px solid #c4c4c4; border-radius: 2px; letter-spacing: 0.05em; text-transform: capitalize; white-space: normal; font-family: 'San Francisco', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: normal; -webkit-transition: all 500ms ease; -moz-transition: all 500ms ease; -ms-transition: all 500ms ease; -o-transition: all 500ms ease; transition: all 500ms ease; }
  .wsite-button:hover .wsite-button-inner, .wsite-button-large:hover .wsite-button-inner { background: #b8b8b8; color: white !important; border: 2px solid #b8b8b8; }
  .wsite-button-highlight, .wsite-button-large.wsite-button-highlight, .wsite-editor .wsite-button-highlight, .wsite-editor .wsite-button-large.wsite-button-highlight { background: none; }
- .wsite-button-highlight .wsite-button-inner, .wsite-button-large.wsite-button-highlight .wsite-button-inner, .wsite-editor .wsite-button-highlight .wsite-button-inner, .wsite-editor .wsite-button-large.wsite-button-highlight .wsite-button-inner { background: #a1b7de; color: white !important; border: 2px solid #a1b7de; -webkit-transition: all 700ms ease; -moz-transition: all 700ms ease; -ms-transition: all 700ms ease; -o-transition: all 700ms ease; transition: all 700ms ease; }
+ .wsite-button-highlight .wsite-button-inner, .wsite-button-large.wsite-button-highlight .wsite-button-inner, .wsite-editor .wsite-button-highlight .wsite-button-inner, .wsite-editor .wsite-button-large.wsite-button-highlight .wsite-button-inner { background: #8e98cd; color: white !important; border: 2px solid #8e98cd; -webkit-transition: all 700ms ease; -moz-transition: all 700ms ease; -ms-transition: all 700ms ease; -o-transition: all 700ms ease; transition: all 700ms ease; }
  .wsite-button-highlight:hover .wsite-button-inner, .wsite-button-large.wsite-button-highlight:hover .wsite-button-inner { background: transparent; color: #ffffff !important; border: 2px solid #ffffff; }
  .wsite-com-checkout-section .wsite-form-field select, .wsite-com-checkout-section .wsite-form-field input, .wsite-com-checkout-section .wsite-form-field .select2-container { height: auto; }
  #wsite-com-checkout-list .wsite-remove-button, #wsite-com-checkout-summary-list .wsite-remove-button { top: 3px; }
@@ -152,7 +152,7 @@ body { width: 100%; height: 100%; min-height: 100%; background: white; color: #8
  .fancybox-title { color: white; font-family: 'San Francisco', Arial, sans-serif; font-size: 15px; font-weight: normal; line-height: normal; }
  .fancybox-close, .fancybox-next span, .fancybox-prev span { background: none !important; width: auto; height: auto; }
  .fancybox-close:before, .fancybox-next span:before, .fancybox-prev span:before { color: white !important; font-family: 'San Francisco', Arial, sans-serif; font-size: 45px; font-weight: 400; line-height: 0.75em; -webkit-transition: all 300ms ease; -moz-transition: all 300ms ease; -ms-transition: all 300ms ease; -o-transition: all 300ms ease; transition: all 300ms ease; }
- .fancybox-close:hover:before, .fancybox-next:hover span:before, .fancybox-prev:hover span:before { color: #a1b7de !important; }
+ .fancybox-close:hover:before, .fancybox-next:hover span:before, .fancybox-prev:hover span:before { color: #8e98cd !important; }
  .fancybox-prev span:before { position: relative; left: -10px; content: '\3008'; }
  .fancybox-next span:before { position: relative; right: -10px; content: '\3009'; }
  .fancybox-close { top: 20px; right: 20px; }
@@ -170,10 +170,10 @@ body { width: 100%; height: 100%; min-height: 100%; background: white; color: #8
  .splash-page .content-wrap div.paragraph { margin-bottom: 25px; color: white; text-align: center; font-family: 'San Francisco', Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 35px; }
  .splash-page .content-wrap p { margin-bottom: 25px; color: white; text-align: center; font-family: 'San Francisco', Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 35px; }
  .splash-page .content-wrap .wsite-button, .splash-page .content-wrap .wsite-button-large { background: transparent; text-align: center !important; }
- .splash-page .content-wrap .wsite-button .wsite-button-inner, .splash-page .content-wrap .wsite-button-large .wsite-button-inner { background: #a1b7de; color: white !important; border: 2px solid #a1b7de; text-transform: uppercase; font-family: 'San Francisco', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: normal; -webkit-transition: all 500ms ease; -moz-transition: all 500ms ease; -ms-transition: all 500ms ease; -o-transition: all 500ms ease; transition: all 500ms ease; }
- .splash-page .content-wrap .wsite-button:hover .wsite-button-inner, .splash-page .content-wrap .wsite-button-large:hover .wsite-button-inner { background: #a1b7de; color: white !important; border: 2px solid #a1b7de; }
+ .splash-page .content-wrap .wsite-button .wsite-button-inner, .splash-page .content-wrap .wsite-button-large .wsite-button-inner { background: #8e98cd; color: white !important; border: 2px solid #8e98cd; text-transform: uppercase; font-family: 'San Francisco', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: normal; -webkit-transition: all 500ms ease; -moz-transition: all 500ms ease; -ms-transition: all 500ms ease; -o-transition: all 500ms ease; transition: all 500ms ease; }
+ .splash-page .content-wrap .wsite-button:hover .wsite-button-inner, .splash-page .content-wrap .wsite-button-large:hover .wsite-button-inner { background: #8e98cd; color: white !important; border: 2px solid #8e98cd; }
  .splash-page .content-wrap .wsite-button-highlight .wsite-button-inner, .splash-page .content-wrap .wsite-button-large.wsite-button-highlight .wsite-button-inner { border: 2px solid white; background: transparent; color: white !important; }
- .splash-page .content-wrap .wsite-button-highlight:hover .wsite-button-inner, .splash-page .content-wrap .wsite-button-large.wsite-button-highlight:hover .wsite-button-inner { background: white; color: #a1b7de !important; }
+ .splash-page .content-wrap .wsite-button-highlight:hover .wsite-button-inner, .splash-page .content-wrap .wsite-button-large.wsite-button-highlight:hover .wsite-button-inner { background: white; color: #8e98cd !important; }
  .splash-page .footer-wrap { display: none; }
  #blogTable .blog-post .blog-header h2.blog-title { margin-bottom: 20px !important; font-weight: 400; }
  #blogTable .blog-post .blog-header h2.blog-title a { color: #333333; }
@@ -182,14 +182,14 @@ body { width: 100%; height: 100%; min-height: 100%; background: white; color: #8
  #blogTable .blog-sidebar p { margin-bottom: 20px; }
  .blogCommentReplyWrapper iframe { height: 560px !important; }
  #commentPostDiv .field input[type=text], #commentPostDiv .field textarea { height: auto; padding: 8px 12px; background: transparent; box-sizing: border-box; -webkit-transition: all 300ms ease; -moz-transition: all 300ms ease; -ms-transition: all 300ms ease; -o-transition: all 300ms ease; transition: all 300ms ease; }
- #commentPostDiv .field input[type=text]:focus, #commentPostDiv .field textarea:focus { border: 1px solid #a1b7de; }
+ #commentPostDiv .field input[type=text]:focus, #commentPostDiv .field textarea:focus { border: 1px solid #8e98cd; }
  #commentSubmit { height: auto; padding: 8px 12px; background: #c4c4c4; color: white; border: 2px solid #c4c4c4; border-radius: 2px; white-space: normal; font-family: 'San Francisco', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: normal; -webkit-transition: all 300ms ease; -moz-transition: all 300ms ease; -ms-transition: all 300ms ease; -o-transition: all 300ms ease; transition: all 300ms ease; }
  #commentSubmit span { background: none; }
  #commentSubmit:hover { background: transparent; color: #c4c4c4 !important; }
  #commentArea { border-top: solid 1px #dadada; padding-top: 20px; }
  #commentAreaTitle, .blogCommentHeading .blogCommentAuthor { font-weight: 400; }
  .blogCommentHeading .blogCommentHeadingInner { height: auto; }
- .blogCommentWrap .blogCommentHeading .blogCommentHeadingInner .blogCommentAuthor .name { text-shadow: none; height: auto; line-height: 1; color: #a1b7de !important; float: none; }
+ .blogCommentWrap .blogCommentHeading .blogCommentHeadingInner .blogCommentAuthor .name { text-shadow: none; height: auto; line-height: 1; color: #8e98cd !important; float: none; }
  .blogCommentHeading .blogCommentHeadingInner .blogCommentAuthor .link { margin: 0 5px; float: none; display: inline-block; }
  .blog-post .blog-header h2.blog-title { margin-bottom: 20px !important; }
  #wsite-content .blog-post .blog-separator { border-color: #ccc; }
@@ -209,7 +209,7 @@ body { width: 100%; height: 100%; min-height: 100%; background: white; color: #8
  .blogCommentWrap .blogCommentText p { color: #999; font-size: 14px; }
  #wsite-com-store .wsite-com-category-subcategory-image-wrap { height: 100%; }
  #wsite-com-store .wsite-com-category-subcategory-name { top: 0; border: 20px solid transparent; }
- #wsite-com-store .wsite-com-category-subcategory-name-bg { position: relative; background-color: #a1b7de; opacity: 0.7; box-sizing: border-box; -webkit-transition: all 400ms ease-in-out; -moz-transition: all 400ms ease-in-out; -ms-transition: all 400ms ease-in-out; -o-transition: all 400ms ease-in-out; transition: all 400ms ease-in-out; }
+ #wsite-com-store .wsite-com-category-subcategory-name-bg { position: relative; background-color: #8e98cd; opacity: 0.7; box-sizing: border-box; -webkit-transition: all 400ms ease-in-out; -moz-transition: all 400ms ease-in-out; -ms-transition: all 400ms ease-in-out; -o-transition: all 400ms ease-in-out; transition: all 400ms ease-in-out; }
  #wsite-com-store .wsite-com-category-subcategory-link:hover .wsite-com-category-subcategory-name-bg { opacity: .95; }
  #wsite-com-store .wsite-com-category-subcategory-name-text { position: absolute; top: 0; left: 0; bottom: 0; right: 0; display: table; width: 100%; height: 100%; padding: 0; background: none; box-sizing: border-box; letter-spacing: .06em; text-shadow: none; text-transform: uppercase; border-collapse: collapse; font-weight: 400; }
  #wsite-com-store .wsite-com-category-subcategory-name-text span { display: table-cell; vertical-align: middle; }
@@ -217,8 +217,8 @@ body { width: 100%; height: 100%; min-height: 100%; background: white; color: #8
  #wsite-com-store .wsite-com-category-product-link .wsite-com-category-product-image-wrap, #wsite-com-store .wsite-com-category-product-link-featured .wsite-com-category-product-featured-image-wrap { opacity: 1; -webkit-transition: all 300ms ease; -moz-transition: all 300ms ease; -ms-transition: all 300ms ease; -o-transition: all 300ms ease; transition: all 300ms ease; }
  #wsite-com-store .wsite-com-category-product-link:hover .wsite-com-category-product-image-wrap, #wsite-com-store .wsite-com-category-product-link-featured:hover .wsite-com-category-product-featured-image-wrap { opacity: .7; }
  #wsite-com-store #wsite-com-hierarchy ul { font-size: 16px; }
- #wsite-com-store #wsite-com-hierarchy ul .wsite-link-unselected { color: #a1b7de; }
- #wsite-com-store #wsite-com-hierarchy ul .wsite-link-unselected:hover { color: #a1b7de; }
+ #wsite-com-store #wsite-com-hierarchy ul .wsite-link-unselected { color: #8e98cd; }
+ #wsite-com-store #wsite-com-hierarchy ul .wsite-link-unselected:hover { color: #8e98cd; }
  #wsite-com-store #wsite-com-hierarchy ul .wsite-com-link-text { margin-bottom: 10px; line-height: 1.5em; }
  .wsite-product { border-radius: 0; box-shadow: none; }
  .wsite-product .wsite-product-button-wrap { text-align: left; }
@@ -314,7 +314,7 @@ body { width: 100%; height: 100%; min-height: 100%; background: white; color: #8
  #wsite-com-store .wsite-com-sidebar #wsite-com-hierarchy { position: relative; display: block; overflow: hidden; width: 100%; max-height: 0px; padding: 0; margin: 0 auto .25em; background: white; box-sizing: border-box; -webkit-transition: all 300ms ease-in-out; -moz-transition: all 300ms ease-in-out; -ms-transition: all 300ms ease-in-out; -o-transition: all 300ms ease-in-out; transition: all 300ms ease-in-out; }
  #wsite-com-store .wsite-com-sidebar #wsite-com-hierarchy > ul { width: 100%; padding: 0; }
  #wsite-com-store .wsite-com-sidebar #wsite-com-hierarchy > ul li { margin-bottom: 15px; }
- #wsite-com-store .wsite-com-sidebar #wsite-com-hierarchy .wsite-link-unselected { color: #a1b7de; }
+ #wsite-com-store .wsite-com-sidebar #wsite-com-hierarchy .wsite-link-unselected { color: #8e98cd; }
  #wsite-com-store .wsite-com-sidebar.sidebar-expanded { cursor: default !important; }
  #wsite-com-store .wsite-com-sidebar.sidebar-expanded:before { content: 'CLOSE\00a0\00a0\25b4'; }
  #wsite-com-store .wsite-com-sidebar.sidebar-expanded #wsite-com-hierarchy { max-height: 1000px; padding: 10px 0; }
@@ -351,9 +351,9 @@ div.paragraph li { padding-left: 5px !important; margin: 3px 0 0 !important; }
 div.paragraph ul, div.paragraph ul li { list-style: disc outside !important; }
 div.paragraph ol, div.paragraph ol li { list-style: decimal outside !important; }
 
-.product-grid .product-grid-image .product-grid__image-sale-banner-wrapper {background: #a1b7de;}
-#wsite-com-category-product-group .category__image-sale-banner-wrapper {background: #a1b7de;}
-#wsite-search-product-results .wsite-search-product-result .wsite-search-product-image-container .search__image-sale-banner-wrapper {background: #a1b7de;}
+.product-grid .product-grid-image .product-grid__image-sale-banner-wrapper {background: #8e98cd;}
+#wsite-com-category-product-group .category__image-sale-banner-wrapper {background: #8e98cd;}
+#wsite-search-product-results .wsite-search-product-result .wsite-search-product-image-container .search__image-sale-banner-wrapper {background: #8e98cd;}
 table, th, td {
     border: 1px solid #000000;
     border-collapse: collapse;
