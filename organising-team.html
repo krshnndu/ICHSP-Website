@@ -126,7 +126,7 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 		
 		
 	</head>
-	<body style="background-color: #f5faef;" class="header-page page-has-banner  wsite-theme-light  wsite-page-travel-and-accommodation header-overlay-off header-animation-on "><div class="wrapper">
+	<body style="background-color: #dcecfc;" class="header-page page-has-banner  wsite-theme-light  wsite-page-travel-and-accommodation header-overlay-off header-animation-on "><div class="wrapper">
 
     <div class="dusk-header">
       <div class="nav-wrap">
@@ -451,11 +451,19 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 </script>
 
 <style>
+	@font-face {
+    font-family: 'San Francisco Regular';
+    src: url('fonts/SFNSDisplay-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .card-container {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 20px;
 	padding: 2cm;
+	margin-top: -50px;
   }
 
 
@@ -489,6 +497,7 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
   font-weight: normal;
   margin-bottom: 5px;
   text-align: center;
+  font-family: 'San Francisco Regular';
 }
 
 .description {
@@ -497,13 +506,20 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
   text-align: center;
 }
 
+@font-face {
+		font-family: 'Playfair Display ExtraBold';
+		src: url('fonts/PlayfairDisplay-ExtraBold.ttf') format('truetype');
+		/* Add more font formats and paths if needed */
+		font-weight: normal;
+		font-style: normal;
+	}
+
 h1 {
-  font-size: 48px;
-  font-weight: bold;
-  color: #333333;
-  text-align: left;
-  padding-left: 2cm;
-}
+		font-size: 24px; /* Adjust the font size as per your preference */
+		font-family: 'Playfair Display ExtraBold';
+		margin-left: 2cm;
+		color: #3f3f3f;
+	}
 
 /* Media query for mobile devices */
 @media (max-width: 767px) {
@@ -678,7 +694,36 @@ h1 {
 	  </div>
 	</div>
 	  
-
+	<style>
+		.content {
+			  padding: 20px;
+			}
+		
+			/* Footer styles */
+			footer {
+			  background-color: transparent;
+			  color: #fff;
+			  text-align: center;
+			  padding: 10px 0;
+			  font-size: 12px;
+			  font-style: italic;
+			  position: relative;
+			  bottom: 0;
+			  left: 0;
+			  right: 0;
+			  border-top: 1px solid #6a65ac; /* Add top black border */
+			}
+		
+			/* Adjust paragraph style inside the footer */
+			footer p {
+			  margin: 0;
+			}
+		
+		  </style>
+		
+		<footer>
+			<p>&copy; 2023 Indian Institute of Management Ranchi. All rights reserved.</p>
+		</footer>
 
 	</body>
 </html>

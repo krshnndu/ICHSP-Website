@@ -125,7 +125,7 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 		
 		
 	</head>
-	<body style="background-color: #f5faef;" class="header-page page-has-banner  wsite-theme-light  wsite-page-registration header-overlay-off header-animation-on "><div class="wrapper">
+	<body style="background-color: #dcecfc;" class="header-page page-has-banner  wsite-theme-light  wsite-page-registration header-overlay-off header-animation-on "><div class="wrapper">
 
     <div class="dusk-header">
       <div class="nav-wrap">
@@ -249,90 +249,154 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 				<td class="wsite-multicol-col" style="width:12.583690515484%; padding:0 15px;"> -->
 
 					<style>
+						body {
+							font-family: 'Arial', sans-serif;
+							margin: 0;
+							padding: 0;
+							background-color: #f4f4f4;
+							color: #333;
+						}
+				
+						.main-wrap {
+						padding: 40px;
+						width: 85%;
+						margin: 0 auto; /* Add this line to center align */
+						}
+				
+						.section-box {
+							background-color: #ffffff;
+							border: 1px solid #ddd;
+							border-radius: 10px;
+							box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+							padding: 20px;
+							margin-bottom: 20px;
+						}
+				
+						.wsite-content-title {
+							color: #2a2a2a;
+							font-size: 28px;
+							margin: 0 0 20px;
+							padding: 10px 0;
+							border-bottom: 2px solid #2a2a2a;
+						}
+				
+						.wsite-content-title2 {
+							color: #2a2a2a;
+							font-size: 28px;
+							margin: 0 0 20px;
+							padding: 10px 0;
+						}
+				
+						.paragraph {
+							font-size: 16px;
+							color: #2a2a2a;
+							line-height: 1.6;
+							margin-bottom: 20px;
+						}
+				
+						.card-container {
+							display: flex;
+							flex-wrap: wrap;
+							gap: 20px;
+							margin-top: 20px;
+						}
+				
+						.card {
+							background-color: #ffffff;
+							border-radius: 10px;
+							box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+							overflow: hidden;
+							width: 100%;
+						}
+				
+						.card-image img {
+							max-width: 100%;
+							height: auto;
+							display: block;
+						}
+				
+						.name {
+							margin: 10px 0;
+							color: #2a2a2a;
+							font-size: 18px;
+						}
+				
 						table {
 							width: 100%;
 							border-collapse: collapse;
-							border: none;
-							color:#3f3f3f;
+							margin-bottom: 20px;
 						}
-	
+				
 						th, td {
 							padding: 15px;
 							text-align: left;
-							border: none;
+							border: 1px solid #ddd;
 						}
-						
+				
 						header {
-							color: #3f3f3f;
+							color: #2a2a2a;
 							padding: 15px;
-							margin-left: 3.5cm;
 							text-align: left;
 							border: none;
 						}
-	
+				
 						tr {
-							border-bottom: 1px solid rgb(215, 215, 215);
+							border-bottom: 1px solid #ccc;
 						}
-	
+				
 						th {
 							font-weight: bold;
 						}
 					</style>
 
 					<br>
-					<!-- <table class="strip" style="width:80%" color="black" align="center">
-						<header><h1 align="left">Dates for Registration</h1></header>
-						<tr></tr>
-						<tr>
-							<td>Early Bird Registration</td>
-							<td>1 August 2023 - 5 December 2023</td>
-						</tr>
-						<tr>
-							<td>Late Registration</td>
-							<td>6 December 2023 – 5 January 2024</td>
-						</tr>
-					</table> -->
+
 
 					<br><br>
-					<table class="strip" style="width:80%" color="black" align="center">
-						<header><h1 align="left">Registration Fee for Participation and Presentation</h1></header>
-						<tr></tr>
-						<tr>
-							<th></th>
-							<th>Early Bird Registrations (till Dec 5th)</th>
-							<th>Late Registration (on or after Dec 6th)</th>
-						</tr>
-						<tr>
-							<td>Delegates from Industry (India & SAARC)</td>
-							<td>INR 8000 + GST</td>
-							<td>INR 8500 + GST</td>
-						</tr>
-						<tr>
-							<td>Delegates from Industry (Except India & SAARC)</td>
-							<td>USD 300 + GST</td>
-							<td>USD 350 + GST</td>
-						</tr>
-						<tr>
-							<td>Academicians (India & SAARC)</td>
-							<td>INR 4500 + GST</td>
-							<td>INR 5000 + GST</td>
-						</tr>
-						<tr>
-							<td>Academicians (Except India & SAARC)</td>
-							<td>USD 200 + GST</td>
-							<td>USD 250 + GST</td>
-						</tr>
-						<tr>
-							<td>Full-time Doctoral students from India & SAARC</td>
-							<td>INR 2500 + GST</td>
-							<td>INR 3000 + GST</td>
-						</tr>
-						<tr>
-							<td>Full-time Doctoral students (Except India & SAARC)</td>
-							<td>USD 100 + GST</td>
-							<td>USD 125 + GST</td>
-						</tr>
-					</table>
+					<div class="main-wrap">
+						<div class="section-box">
+							<header><h1>Registration Fee for Participation and Presentation</h1></header>
+							<table class="strip">
+								<tr>
+									<th></th>
+									<th>Early Bird Registrations</th>
+									<th>Late Registration</th>
+								</tr>
+								<tr>
+									<td>Delegates from Industry - India & SAARC</td>
+									<td>INR 8000 + GST</td>
+									<td>INR 8500 + GST</td>
+								</tr>
+								<tr>
+									<td>Delegates from Industry - Except India & SAARC</td>
+									<td>USD 300 + GST</td>
+									<td>USD 350 + GST</td>
+								</tr>
+								<tr>
+									<td>Academicians - India & SAARC</td>
+									<td>INR 4500 + GST</td>
+									<td>INR 5000 + GST</td>
+								</tr>
+								<tr>
+									<td>Academicians - Except India & SAARC</td>
+									<td>USD 200 + GST</td>
+									<td>USD 250 + GST</td>
+								</tr>
+								<tr>
+									<td>Students/Doctoral Scholars - India & SAARC</td>
+									<td>INR 2500 + GST</td>
+									<td>INR 3000 + GST</td>
+								</tr>
+								<tr>
+									<td>Students/Doctoral Scholars - Except India & SAARC</td>
+									<td>USD 100 + GST</td>
+									<td>USD 125 + GST</td>
+								</tr>
+							</table>
+						</div>
+						</div>
+					
+
 					<div class="paragraph" style="text-align: left; font-family: 'San Francisco', Arial, sans-serif;">
 						<font size="4">
 						  <font color="#2a2a2a">
@@ -698,6 +762,36 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 	})(window._W && _W.jQuery);
 </script>
 
+<style>
+	.content {
+		  padding: 20px;
+		}
+	
+		/* Footer styles */
+		footer {
+		  background-color: transparent;
+		  color: #fff;
+		  text-align: center;
+		  padding: 10px 0;
+		  font-size: 12px;
+		  font-style: italic;
+		  position: relative;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  border-top: 1px solid #6a65ac; /* Add top black border */
+		}
+	
+		/* Adjust paragraph style inside the footer */
+		footer p {
+		  margin: 0;
+		}
+	
+	  </style>
+	
+	<footer>
+		<p>&copy; 2023 Indian Institute of Management Ranchi. All rights reserved.</p>
+	</footer>
 
 	</body>
 </html>

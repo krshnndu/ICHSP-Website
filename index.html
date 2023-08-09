@@ -5,29 +5,144 @@
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+		<style>
+			/* Navbar Styling */
+			.navbar {
+			  display: none;
+			  align-items: center;
+			  justify-content: space-between;
+			  height: 50px;
+			  background-color: #6a65ac;
+			  color: #fff;
+			  padding: 0px;
+			  top: 0%;
+			  position: fixed;
+			  z-index: 99;
+			  height: 50px;
+			  width: 100%;
+			}
+		  
+			/* Logo */
+			.logo {
+			  font-size: 32px;
+			  margin-left: 10px;
+			  margin-top: 10px;
+			  margin-bottom: 5px;
+			  scale: 70%;
+			}
+		  
+			/* Hamburger Menu */
+			.hamburger-menu {
+			  display: none;
+			  flex-direction: column;
+			  justify-content: space-between;
+			  height: 15px;
+			  width: 25px;
+			  padding: 10px;
+			}
+		  
+			.hamburger-menu div {
+			  height: 3px;
+			  background-color: #fff;
+			}
+		  
+			/* Mobile Menu */
+			.mobile-menu {
+			  display: none;
+			  position: absolute;
+			  top: 60px;
+			  right: 10px;
+			  background-color: #6a65ac;
+			  color: #fff;
+			  width: calc(100% - 20px);
+			  border-radius: 10px;
+			}
+		  
+			.mobile-menu li {
+			  list-style: none;
+			  margin: 10px;
+			  text-align: center;
+			}
+		  
+			.mobile-menu a {
+			  text-decoration: none;
+			  color: #fff;
+			  font-size: 14px;
+			  font-weight: bold;
+			}
+		  
+			/* Media Query for Mobile */
+			@media (max-width: 768px) {
+			  .navbar {
+				display: flex;
+			  }
+			  .hamburger-menu {
+				display: flex; /* Show the hamburger menu only on mobile */
+			  }
+		  
+			  .nav-links {
+				display: none; /* Hide the desktop menu links */
+			  }
+			  
+			  /* Show the mobile menu when the hamburger menu is clicked */
+			  .hamburger-menu.active + .mobile-menu {
+				display:block; 
+			  }
+			  
+			  /* Change the hamburger menu to an "X" when clicked */
+			  .hamburger-menu.active div:nth-child(1) {
+				transform: rotate(45deg) translate(5px,5px);
+			  }
+			  
+			  .hamburger-menu.active div:nth-child(2) {
+				opacity:0
+			  }
+			  
+			  .hamburger-menu.active div:nth-child(3) {
+				transform: rotate(-45deg) translate(5px,-5px);
+			  }
+			}
+		  </style>
+
 <meta property="og:title" content="ICHSP" />
 <meta property="og:description" content="ICHSP Brochure" />
 <!-- <meta property="og:url" content="https://www.photonics2023.net/" /> -->
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap">
 <style>
+	@font-face {
+		font-family: 'San Francisco Regular';
+		src: url('/fonts/san_francisco-webfont.woff2') format('woff2'),
+			url('/fonts/san_francisco-webfont.woff') format('woff');
+	}
+
+	@font-face {
+		font-family: 'Playfair Display Regular';
+		src: url('/fonts/PlayfairDisplay-ExtraBold.ttf') format('truetype');
+		/* Add more font formats and paths if needed */
+		font-weight: normal;
+		font-style: normal;
+	}
 	h1 {
-		font-size: 24px; /* Adjust the font size as per your preference */
-		font-family: 'San Francisco', Arial, sans-serif;
+		font-size: 6; /* Adjust the font size as per your preference */
+		font-family: 'Playfair Display Regular';
 	}
 
 	h2 {
-		font-size: 22px;
-		font-family: 'San Francisco', Arial, sans-serif;
+		font-size: 16px;
+		font-family: 'Playfair Display Regular';
 	}
 
 	h3 {
 		font-size: 20px; /* Adjust the font size as per your preference */
+		font-family: 'Playfair Display Regular';
+	}
+	body {
+		font-size: 18px; /* Adjust the font size as per your preference */
 		font-family: 'San Francisco', Arial, sans-serif;
 	}
-
-	body {
-		font-size: 18px;
+	p {
+		font-size: 18px; /* Adjust the font size as per your preference */
 		font-family: 'San Francisco', Arial, sans-serif;
 	}
 
@@ -59,7 +174,7 @@
 .wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-family:'Playfair Display Regular' !important;font-weight:700 !important;text-transform:  none !important;}
 #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {color:#3f3f3f !important;}
 .wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
-#wsite-title {font-family:'Playfair Display Regular' !important; color:#5d94c9 !important;}
+#wsite-title {font-family:'Playfair Display Regular' !important; color:#a1b7de !important;}
 .wsite-footer h2 a, .wsite-footer .paragraph a, .wsite-footer blockquote a {color:#515151 !important;}
 .wsite-menu-default a {}
 .wsite-menu a {}
@@ -100,7 +215,7 @@
 .wsite-product .wsite-product-price a {}
 }</style>
 <style>
-.wsite-background {background-image: url("/img/background-images/img/background-images/home-bg.jpg") !important;background-repeat: no-repeat !important;background-position: 50% 50% !important;background-size: 150% !important;background-color: transparent !important;background: inherit;}
+.wsite-background {background-image: url("/img/background-images/img/background-images/home-bg.png") !important;background-repeat: no-repeat !important;background-position: 50% 50% !important;background-size: 150% !important;background-color: transparent !important;background: inherit;}
 body.wsite-background {background-attachment: fixed !important;}.wsite-background.wsite-custom-background{ background-size: cover !important}
 </style>
 		<script src='main.js'></script>
@@ -154,11 +269,11 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 		
 		
 	</head>
-	<body style="background-color: #f5faef;" class="header-page page-has-banner  wsite-theme-light  wsite-page-key-dates header-overlay-off header-animation-on "><div class="wrapper">
+	<body style="background-color: #dcecfc;" class="header-page page-has-banner  wsite-theme-light  wsite-page-index header-overlay-off header-animation-on "><div class="wrapper">
   	<div class="banner-wrap">
       <div class="wsite-elements wsite-not-footer wsite-header-elements">
 	<div class="wsite-section-wrap">
-	<div  class="wsite-section wsite-header-section wsite-section-bg-image" style="height: 610px;vertical-align: top;background-image: url(img/background-images/home-bg.jpg) ;background-repeat: no-repeat ;background-position: 50.00% 51.71% ;background-size: 100% ;background-color: transparent ;background-size: cover;" >
+	<div  class="wsite-section wsite-header-section wsite-section-bg-image" style="height: 610px;vertical-align: top;background-image: url(img/background-images/home-bg.png) ;background-repeat: no-repeat ;background-position: 50.00% 51.71% ;background-size: 100% ;background-color: transparent ;background-size: cover;" >
 		<div class="wsite-section-content">
 			
 			<style>
@@ -188,6 +303,12 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 					color: white;
 					font-size: 100px;
 				}
+				header3 {
+					font-family: "Montserrat Extra Bold", sans-serif;
+					text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+					color: white;
+					font-size: 60px;
+				}
 				@media (max-width: 767px) {
 				header2 {
 					color: white;
@@ -203,6 +324,10 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 					color: white;
 					font-size: 60px;  
 				}
+				header3 {
+					color: white;
+					font-size: 60px;  
+				}
 			</style>
 			
 			<div class="container">
@@ -212,7 +337,8 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 <header2a>International Conference On</header2a>
 <br>
 
-						<header2mid>Happiness:<br> Science & Practice</header2mid><br>
+						<header2mid>Happiness:</header2mid><br>
+						<header3>Science & Practice</header3><br>
 
 						
 			    <!-- <div style="padding-top:50px; padding-bottom: 50px;"><a class="button" href="https://www.google.com">Download Brochure</a></div> -->
@@ -248,6 +374,40 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 </div>
 
     </div><!-- end banner-wrap -->
+
+
+
+	<div class="navbar">
+  
+		<div class="logo">
+  <img src="img/logo/ICHSP.png" alt="Logo">
+</div>
+
+	
+  <div class="hamburger-menu">
+  <div></div>
+  <div></div>
+  <div></div>
+  </div>
+  
+  <ul class="mobile-menu">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="call-for-papers.html">Call for Papers</a></li>
+  <li><a href="important-dates.html">Important Dates</a></li>
+  <li><a href="registration.html">Registration</a></li>
+  <li><a href="contact-us.html">Contact Us</a></li>
+  </ul>
+  
+  </div>
+
+			<script>
+				document.querySelector('.hamburger-menu').addEventListener('click', () => {
+				  document.querySelector('.hamburger-menu').classList.toggle('active');
+				});
+			  </script>
+			  
+
+
 
     <div class="dusk-header">
       <div class="nav-wrap">
@@ -320,11 +480,11 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 	</ul>
 	</div>
 	
-			  <a class="hamburger" aria-label="Menu" href="index.html#"><span></span></a>
+			  <a class="hamburger" aria-label="Menu" href="index.html"><span></span></a>
 			</div><!-- end container -->
 		  </div>
 		</div><!-- end header -->
-	
+
 
     <div class="main-wrap">
       <div id="wsite-content" class="wsite-elements wsite-not-footer">
@@ -343,7 +503,7 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 
     .button {
         display: inline-block;
-        background-color: #5d94c9;
+        background-color: #a1b7de;
         color: #fff;
         padding: 12px 24px;
         text-decoration: none;
@@ -353,23 +513,21 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
     }
 
 	.button-container .button:hover {
-        background-color: #5d94c9; /* Use the same background color on hover */
+        background-color: #a1b7de; /* Use the same background color on hover */
     }
 </style>
 
 <!-- <div><marquee scrolldirection="left" style="color: blue;">"IPM 2023-28 applicants are hereby informed that minimum IPMAT 2023 scores (overall) for being shortlisted for Personal Interview are: General- 187, EWS- 153, NC-OBC- 131 , SC - 90, ST- 43, DAP- 34." </marquee></div> -->
 
 
-
-
-
 <div class="wsite-spacer" style="height:50px;"></div>
 
 <div class="paragraph">
-    <h2 class="wsite-content-title"><font size="10"></font><font color="#2a2a2a">About the Conference</font></h2>
-    <div class="paragraph">
+    <h1 align="center"><font size="6"><font color="#2a2a2a">About the Conference</font></font></h1>
+    <br>
+	<div class="paragraph">
         <font size="4"><font color="#000000">
-        The "International conference on Happiness: Science & Practice (ICHSP)" aims to investigate the multidimensional aspects of happiness from both scientific and practical vantage points. The purpose of the conference is to bring together researchers, practitioners, policymakers, and individuals from throughout the world interested in the field of happiness to share knowledge, discuss the latest findings in happiness research, and exchange insights. The overarching objective is to promote a deeper comprehension of happiness and well-being and to investigate ways to apply this knowledge to improve individual and societal happiness.
+		The "International conference on Happiness: Science & Practice (ICHSP)" aims to investigate the multidimensional aspects of happiness from both scientific and practical vantage points. The purpose of the conference is to bring together researchers, practitioners, policymakers, and individuals from throughout the world interested in the field of happiness to share knowledge, discuss the latest findings in happiness research, and exchange insights. The overarching objective is to promote a deeper comprehension of happiness and well-being and to investigate ways to apply this knowledge to improve individual and societal happiness.
 		<a href="http://www.rekhifoundation.com/initiative-rekhi-center-of-excellence" target="_blank">Click here</a> to know more about Rekhi Centre of Excellence for the Science of Happiness, IIM Ranchi.
         </font></font><br /><br/>
     </div>
@@ -382,25 +540,30 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 		width: 100%;
 		border-collapse: collapse;
 		border: none;
+		color: #3f3f3f;
 	}
 
 	th, td {
 		padding: 15px;
 		text-align: left;
 		border: none;
+		color: #3f3f3f;
 	}
 
 	tr {
 		border-bottom: 1px solid rgb(215, 215, 215);
+		color: #3f3f3f;
 	}
 
 	th {
 		font-weight: bold;
+		color: #3f3f3f;
 	}
 </style>
 
 <div class="strip">
-    <h2 class="wsite-content-title"><font color="#2a2a2a">Conference Details</font></h2>
+    <h1 align="center"><font size="6"><font color="#3f3f3f">Conference Details</font></font></h1>
+	<br /><br />
     <table>
 		<tr>
 
@@ -429,7 +592,9 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 
 
 
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+<div>
+	<div class="wsite-multicol">
+		<div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
 	<table class="wsite-multicol-table">
 		<tbody class="wsite-multicol-tbody">
 			<tr class="wsite-multicol-tr">
@@ -644,12 +809,48 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 		</tbody>
 	</table>
 </div></div></div>
+<style>
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+		gap: 100px;
+    }
 
+    .card2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f5f5f5;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 0 20px; 
+        max-width: 200px;
+    }
+	@media screen and (max-width: 600px) {
+		.card-container {
+			flex-direction: column;
+			gap: 20px;
+		}
+
+		.card2 {
+			margin: 10px;
+			max-width: calc(100% - 20px);
+		}
+		}
+
+	
+
+
+	</style>
 
 <div class="wsite-spacer" style="height:50px;"></div>
-<h2 class="wsite-content-title"><font color="#2a2a2a">Patrons</font></h2>
+<h1 align="center"><font size="6"><font color="#2a2a2a">Patrons</font></font></h1>
+<br /><br />
 <div class="card-container">
-	<div class="card">
+	<div class="card2">
 	  <div class="card-image">
 		<img alt src="img/prof-photos/director.jpg">
 	  </div>
@@ -658,7 +859,7 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 		<p class="designation">Director, <br>IIM Ranchi</p>
 	  </div>
 	</div>
-	<div class="card">
+	<div class="card2">
 	  <div class="card-image">
 		<img src="img/prof-photos/Satinder-Singh-rekhi-2.webp" alt="Profile Picture 1">
 	  </div>
@@ -670,7 +871,8 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
   </div>
 
 <div class="wsite-spacer" style="height:50px;"></div>
-<h2 class="wsite-content-title"><font color="#2a2a2a">Chairpersons</font></h2>
+<h1 align="center"><font size="6"><font color="#2a2a2a">Chairpersons</font></font></h1>
+<br /><br />
 <div class="card-container">
 	<div class="card">
 		<div class="card-image">
@@ -686,13 +888,14 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 		<img src="img/prof-photos/allen sir.jpg">
 	  </div>
 	  <div class="description">
-		<h3 class="name">Prof. Allen Joshua George</h3>
+		<h3 class="name">Prof. Allen J. George</h3>
 		<p class="designation">Assistant Professor, <br>IIM Ranchi</p>
 	  </div>
 	</div>
   </div>
   <div class="wsite-spacer" style="height:50px;"></div>
-  <h2 class="wsite-content-title"><font color="#2a2a2a">Advisory Committee</font></h2>
+  <h1 align="center"><font size="6"><font color="#2a2a2a">Advisory Committee</font></font></h1>
+  <br /><br />
   <div class="card-container">
 	  <div class="card">
 		<div class="card-image">
@@ -708,8 +911,8 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 		  <img src="img/prof-photos/Prof.Manas-Mandal.jpg" alt="Profile Picture 1">
 		</div>
 		<div class="description">
-		  <h3 class="name">Prof. Manas Kumar Mandal</h3>
-		  <p class="designation">Distinguished Visiting Professor, <br>IIT Kharagpur</p>
+		  <h3 class="name">Prof. Manas K. Mandal</h3>
+		  <p class="designation">Visiting Professor, <br>IIT Kharagpur</p>
 		</div>
 	  </div>
 	  <div class="card">
@@ -881,98 +1084,101 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 </ul>
 </div>
 
+<footer style="background-color: #333; color: #fff; text-align: center; padding: 10px 0; font-size: 12px; font-style: italic;">
+    <p>&copy; 2023 Indian Institute of Management Ranchi. All rights reserved.</p>
+</footer>
 
 <script type="text/javascript" src="files/theme/plugins.js%3F1583952700"></script>
 <script type="text/javascript" src="files/theme/custom.js%3F1583952700"></script>
-  <div id="customer-accounts-app"></div>
-  <script src="https://cdn2.editmysite.com/js/site/main-customer-accounts-site.js?buildTime=1688151424"></script>
+<div id="customer-accounts-app"></div>
+<script src="https://cdn2.editmysite.com/js/site/main-customer-accounts-site.js?buildTime=1688151424"></script>
 
-	  <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-7870337-1']);
-  _gaq.push(['_setDomainName', 'none']);
-  _gaq.push(['_setAllowLinker', true]);
+	<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7870337-1']);
+_gaq.push(['_setDomainName', 'none']);
+_gaq.push(['_setAllowLinker', true]);
 
-  (function() {
-	  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	  // NOTE: keep the [1] if you replace this code. Otherwise cookie banner scripts won't be first on the page
-	  var s = document.getElementsByTagName('script')[1]; s.parentNode.insertBefore(ga, s);
-  })();
+(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	// NOTE: keep the [1] if you replace this code. Otherwise cookie banner scripts won't be first on the page
+	var s = document.getElementsByTagName('script')[1]; s.parentNode.insertBefore(ga, s);
+})();
 
-  _W.Analytics = _W.Analytics || {'trackers': {}};
-  _W.Analytics.trackers.wGA = '_gaq';
+_W.Analytics = _W.Analytics || {'trackers': {}};
+_W.Analytics.trackers.wGA = '_gaq';
 </script>
 
 <script type="text/javascript" async=1>
-  // NOTE: keep the getElementsByTagName(o)**[1]** if you replace this code. Otherwise cookie banner scripts won't be first on the page
-  ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
-		  p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
-		  };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[1];n.async=1;
-		  n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,'script','//cdn2.editmysite.com/js/wsnbn/snowday262.js','snowday'));
+// NOTE: keep the getElementsByTagName(o)**[1]** if you replace this code. Otherwise cookie banner scripts won't be first on the page
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+		p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+		};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[1];n.async=1;
+		n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,'script','//cdn2.editmysite.com/js/wsnbn/snowday262.js','snowday'));
 
-  var r = [99, 104, 101, 99, 107, 111, 117, 116, 46, 40, 119, 101, 101, 98, 108, 121, 124, 101, 100, 105, 116, 109, 121, 115, 105, 116, 101, 41, 46, 99, 111, 109];
-  var snPlObR = function(arr) {
-	  var s = '';
-	  for (var i = 0 ; i < arr.length ; i++){
-		  s = s + String.fromCharCode(arr[i]);
-	  }
-	  return s;
-  };
-  var s = snPlObR(r);
+var r = [99, 104, 101, 99, 107, 111, 117, 116, 46, 40, 119, 101, 101, 98, 108, 121, 124, 101, 100, 105, 116, 109, 121, 115, 105, 116, 101, 41, 46, 99, 111, 109];
+var snPlObR = function(arr) {
+	var s = '';
+	for (var i = 0 ; i < arr.length ; i++){
+		s = s + String.fromCharCode(arr[i]);
+	}
+	return s;
+};
+var s = snPlObR(r);
 
-  var regEx = new RegExp(s);
+var regEx = new RegExp(s);
 
-  _W.Analytics = _W.Analytics || {'trackers': {}};
-  _W.Analytics.trackers.wSP = 'snowday';
-  _W.Analytics.user_id = '144252428';
-  _W.Analytics.site_id = '871577878540381930';
+_W.Analytics = _W.Analytics || {'trackers': {}};
+_W.Analytics.trackers.wSP = 'snowday';
+_W.Analytics.user_id = '144252428';
+_W.Analytics.site_id = '871577878540381930';
 
-  var drSegmentsTag = document.getElementById('drSegments');
-  if (drSegmentsTag) {
-	  _W.Analytics.spContexts = _W.Analytics.spContexts || [];
+var drSegmentsTag = document.getElementById('drSegments');
+if (drSegmentsTag) {
+	_W.Analytics.spContexts = _W.Analytics.spContexts || [];
 
-	  var segmentData = JSON.parse(drSegmentsTag.innerText);
-	  segmentData.forEach(function(test) {
-		  _W.Analytics.spContexts.push({
-			  schema: "iglu:com.weebly/context_ab_segment/jsonschema/1-0-0",
-			  data: {
-				  test_id: test.name,
-				  segment: test.variant,
-			  }
-		  });
-	  });
-  }
+	var segmentData = JSON.parse(drSegmentsTag.innerText);
+	segmentData.forEach(function(test) {
+		_W.Analytics.spContexts.push({
+			schema: "iglu:com.weebly/context_ab_segment/jsonschema/1-0-0",
+			data: {
+				test_id: test.name,
+				segment: test.variant,
+			}
+		});
+	});
+}
 
 
-  (function(app_id, ec_hostname, discover_root_domain) {
-	  var track = window[_W.Analytics.trackers.wSP];
-	  if (!track) return;
-	  track('newTracker', app_id, ec_hostname, {
-		  appId: app_id,
-		  post: true,
-		  platform: 'web',
-		  discoverRootDomain: discover_root_domain,
-		  cookieName: '_snow_',
-		  contexts: {
-			  webPage: true,
-			  performanceTiming: true,
-			  gaCookies: true
-		  },
-		  crossDomainLinker: function (linkElement) {
-			  return regEx.test(linkElement.href);
-		  },
-		  respectDoNotTrack: true
-	  });
-	  track('trackPageView', _W.Analytics.user_id+':'+_W.Analytics.site_id, _W.Analytics.spContexts);
-	  track('crossDomainLinker', function (linkElement) {
-		  return regEx.test(linkElement.href);
-	  });
-  })(
-	  '_wn',
-	  'ec.editmysite.com',
-	  true
-  );
+(function(app_id, ec_hostname, discover_root_domain) {
+	var track = window[_W.Analytics.trackers.wSP];
+	if (!track) return;
+	track('newTracker', app_id, ec_hostname, {
+		appId: app_id,
+		post: true,
+		platform: 'web',
+		discoverRootDomain: discover_root_domain,
+		cookieName: '_snow_',
+		contexts: {
+			webPage: true,
+			performanceTiming: true,
+			gaCookies: true
+		},
+		crossDomainLinker: function (linkElement) {
+			return regEx.test(linkElement.href);
+		},
+		respectDoNotTrack: true
+	});
+	track('trackPageView', _W.Analytics.user_id+':'+_W.Analytics.site_id, _W.Analytics.spContexts);
+	track('crossDomainLinker', function (linkElement) {
+		return regEx.test(linkElement.href);
+	});
+})(
+	'_wn',
+	'ec.editmysite.com',
+	true
+);
 </script>
 
 
@@ -980,96 +1186,128 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 
 
 <script>
-  (function(jQuery) {
-	  try {
-		  if (jQuery) {
-			  jQuery('div.blog-social div.fb-like').attr('class', 'blog-social-item blog-fb-like');
-			  var $commentFrame = jQuery('#commentArea iframe');
-			  if ($commentFrame.length > 0) {
-				  var frameHeight = jQuery($commentFrame[0].contentWindow.document).height() + 50;
-				  $commentFrame.css('min-height', frameHeight + 'px');
-			  }
-			  if (jQuery('.product-button').length > 0){
-				  jQuery(document).ready(function(){
-					  jQuery('.product-button').parent().each(function(index, product){
-						  if(jQuery(product).attr('target') == 'paypal'){
-							  if (!jQuery(product).find('> [name="bn"]').length){
-								  jQuery('<input>').attr({
-									  type: 'hidden',
-									  name: 'bn',
-									  value: 'DragAndDropBuil_SP_EC'
-								  }).appendTo(product);
-							  }
-						  }
-					  });
-				  });
-			  }
-		  }
-		  else {
-			  // Prototype
-			  $$('div.blog-social div.fb-like').each(function(div) {
-				  div.className = 'blog-social-item blog-fb-like';
-			  });
-			  $$('#commentArea iframe').each(function(iframe) {
-				  iframe.style.minHeight = '410px';
-			  });
-		  }
-	  }
-	  catch(ex) {}
-  })(window._W && _W.jQuery);
+(function(jQuery) {
+	try {
+		if (jQuery) {
+			jQuery('div.blog-social div.fb-like').attr('class', 'blog-social-item blog-fb-like');
+			var $commentFrame = jQuery('#commentArea iframe');
+			if ($commentFrame.length > 0) {
+				var frameHeight = jQuery($commentFrame[0].contentWindow.document).height() + 50;
+				$commentFrame.css('min-height', frameHeight + 'px');
+			}
+			if (jQuery('.product-button').length > 0){
+				jQuery(document).ready(function(){
+					jQuery('.product-button').parent().each(function(index, product){
+						if(jQuery(product).attr('target') == 'paypal'){
+							if (!jQuery(product).find('> [name="bn"]').length){
+								jQuery('<input>').attr({
+									type: 'hidden',
+									name: 'bn',
+									value: 'DragAndDropBuil_SP_EC'
+								}).appendTo(product);
+							}
+						}
+					});
+				});
+			}
+		}
+		else {
+			// Prototype
+			$$('div.blog-social div.fb-like').each(function(div) {
+				div.className = 'blog-social-item blog-fb-like';
+			});
+			$$('#commentArea iframe').each(function(iframe) {
+				iframe.style.minHeight = '410px';
+			});
+		}
+	}
+	catch(ex) {}
+})(window._W && _W.jQuery);
 </script>
 
 <script>
-  window._W.isEUUser = false;
-  window._W.showCookieToAll = "";
+window._W.isEUUser = false;
+window._W.showCookieToAll = "";
 </script>
 
 <script>
-  (function(jQuery) {
-	  try {
-		  function forceShowCcLinks() {
-			  var ccLinks = document.querySelector('.cc_links');
-			  if (!ccLinks) {
-				  return;
-			  }
+(function(jQuery) {
+	try {
+		function forceShowCcLinks() {
+			var ccLinks = document.querySelector('.cc_links');
+			if (!ccLinks) {
+				return;
+			}
 
-			  var ccLinksVisible = jQuery(ccLinks).is(':visible');
-			  if (ccLinksVisible) {
-				  return;
-			  }
+			var ccLinksVisible = jQuery(ccLinks).is(':visible');
+			if (ccLinksVisible) {
+				return;
+			}
 
 
-			  ccLinks.style.display = 'block';
+			ccLinks.style.display = 'block';
 
-			  var ccParent = ccLinks.parentElement;
+			var ccParent = ccLinks.parentElement;
 
-			  var ccParentVisible = jQuery(ccParent).is(':visible');
-			  if (ccParentVisible) {
-				  return;
-			  }
+			var ccParentVisible = jQuery(ccParent).is(':visible');
+			if (ccParentVisible) {
+				return;
+			}
 
-			  ccParent.style.display = 'block';
+			ccParent.style.display = 'block';
 
-			  var ccGrandparent = ccParent.parentElement;
-			  var ccGrandparentVisible = jQuery(ccGrandparent).is(':visible');
-			  if (ccGrandparentVisible) {
-				  return;
-			  }
-			  ccGrandparent.style.display = 'block';
+			var ccGrandparent = ccParent.parentElement;
+			var ccGrandparentVisible = jQuery(ccGrandparent).is(':visible');
+			if (ccGrandparentVisible) {
+				return;
+			}
+			ccGrandparent.style.display = 'block';
 
-		  }
+		}
 
-		  function forceShowCcLinksForever() {
-			  var tenSeconds = 10000;
-			  forceShowCcLinks();
-			  setTimeout(forceShowCcLinksForever, tenSeconds);
-		  }
+		function forceShowCcLinksForever() {
+			var tenSeconds = 10000;
+			forceShowCcLinks();
+			setTimeout(forceShowCcLinksForever, tenSeconds);
+		}
 
-		  jQuery(document).ready(forceShowCcLinksForever);
-	  }
-	  catch(ex) {}
-  })(window._W && _W.jQuery);
+		jQuery(document).ready(forceShowCcLinksForever);
+	}
+	catch(ex) {}
+})(window._W && _W.jQuery);
 </script>
+
+<style>
+	.content {
+		padding: 20px;
+	}
+
+	/* Footer styles */
+	footer {
+		display:flex;
+			  align-items: center;
+			  justify-content: space-between;
+			  height: 50px;
+			  background-color: #6a65ac;
+			  color: #fff;
+			  padding: 0px;
+			  bottom: 0%;
+			  position: fixed;
+			  z-index: 99;
+			  height: 50px;
+			  width: 100%;
+	}
+
+	/* Adjust paragraph style inside the footer */
+	footer p {
+		margin: 0;
+		z-index: 999;
+	}
+</style>
+
+<footer>
+    &copy; 2023 Indian Institute of Management Ranchi. All rights reserved.
+</footer>
 
 
   </body>
