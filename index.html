@@ -111,14 +111,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap">
 <style>
 	@font-face {
-		font-family: 'San Francisco Regular';
-		src: url('/fonts/san_francisco-webfont.woff2') format('woff2'),
-			url('/fonts/san_francisco-webfont.woff') format('woff');
+		font-family: 'San Francisco', Arial, sans-serif;
+		src: url('fonts/san_francisco-webfont.woff2') format('woff2'),
+			url('fonts/san_francisco-webfont.woff') format('woff');
 	}
 
 	@font-face {
 		font-family: 'Playfair Display Regular';
-		src: url('/fonts/PlayfairDisplay-ExtraBold.ttf') format('truetype');
+		src: url('fonts/PlayfairDisplay-ExtraBold.ttf') format('truetype');
 		/* Add more font formats and paths if needed */
 		font-weight: normal;
 		font-style: normal;
@@ -341,8 +341,8 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 						<header3>Science & Practice</header3><br>
 
 						
-			    <!-- <div style="padding-top:50px; padding-bottom: 50px;"><a class="button" href="https://www.google.com">Download Brochure</a></div> -->
-				<br><br>
+			    <div style="padding-top:50px; padding-bottom: 50px;"><a class="button" href="https://www.google.com">Download Brochure</a></div>
+				
 		
 
 								<header2>
@@ -503,7 +503,7 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 
     .button {
         display: inline-block;
-        background-color: #8e98cd;
+        background-color: #6a64ac;
         color: #fff;
         padding: 12px 24px;
         text-decoration: none;
@@ -820,7 +820,7 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
         }
 
         .card2 {
-            display: flex;
+            display: flex;	
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -833,14 +833,14 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
             height: 300px; /* Set a fixed height for the card */
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 768px) {
             .card-container {
                 flex-direction: column;
                 gap: 20px;
             }
 			.card-container2 {
                 flex-direction: column;
-                gap: 20px;
+                gap: 0px;
             }
 
             .card2 {
@@ -856,7 +856,7 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 <div class="card-container">
 	<div class="card2">
 	  <div class="card-image">
-		<img alt src="img/prof-photos/director.jpg">
+		<img alt src="img/prof-photos/Director sir.png">
 	  </div>
 	  <div class="description">
 		<h3 class="name">Prof. Deepak Srivastava</h3>
@@ -865,7 +865,7 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 	</div>
 	<div class="card2">
 	  <div class="card-image">
-		<img src="img/prof-photos/Satinder-Singh-rekhi-2.webp" alt="Profile Picture 1">
+		<img src="img/prof-photos/Prof. Rekhi.png" alt="Profile Picture 1">
 	  </div>
 	  <div class="description">
 		<h3 class="name">Dr. Satinder Singh Rekhi</h3>
@@ -880,7 +880,7 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 <div class="card-container">
 	<div class="card2">
 		<div class="card-image">
-		  <img src="img/prof-photos/tanu mam.jpg" alt="Profile Picture 1">
+		  <img src="img/prof-photos/Tanu Mam.png" alt="Profile Picture 1">
 		</div>
 		<div class="description">
 		  <h3 class="name">Prof. Tanusree Dutta</h3>
@@ -889,7 +889,7 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 	  </div>
 	<div class="card2">
 	  <div class="card-image">
-		<img src="img/prof-photos/allen sir.jpg">
+		<img src="img/prof-photos/Prof. Allen.png">
 	  </div>
 	  <div class="description">
 		<h3 class="name">Prof. Allen J. George</h3>
@@ -903,7 +903,7 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
   <div class="card-container2">
 	  <div class="card2">
 		<div class="card-image">
-		  <img src="img/prof-photos/basudeb das.jpg">
+		  <img src="img/prof-photos/Prof. Basudeb das.png">
 		</div>
 		<div class="description">
 		  <h3 class="name">Dr. Basudeb Das</h3>
@@ -912,7 +912,7 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 	  </div>
 	  <div class="card2">
 		<div class="card-image">
-		  <img src="img/prof-photos/Prof.Manas-Mandal.jpg" alt="Profile Picture 1">
+		  <img src="img/prof-photos/Prof. manas Mandal.png" alt="Profile Picture 1">
 		</div>
 		<div class="description">
 		  <h3 class="name">Prof. Manas K. Mandal</h3>
@@ -921,7 +921,7 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 	  </div>
 	  <div class="card2">
 		<div class="card-image">
-		  <img src="img/prof-photos/Dr.-Nishant-Goyal.jpg" alt="Profile Picture 1">
+		  <img src="img/prof-photos/Dr. Nishant Goyal.png" alt="Profile Picture 1">
 		</div>
 		<div class="description">
 		  <h3 class="name">Prof. Nishant Goyal</h3>
@@ -930,7 +930,7 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 	  </div>
 	  <div class="card2">
 		<div class="card-image">
-		  <img src="img/prof-photos/anirban.png" alt="Profile Picture 1">
+		  <img src="img/prof-photos/Prof. Anirban.png" alt="Profile Picture 1">
 		</div>
 		<div class="description">
 		  <h3 class="name">Dr. Anirban Bandyopadhyay</h3>

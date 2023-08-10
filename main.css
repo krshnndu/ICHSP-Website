@@ -9,9 +9,9 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
 }
 
 @font-face {
-  font-family: 'San Francisco Regular';
-  src: url('/fonts/san_francisco-webfont.woff2') format('woff2'),
-       url('/fonts/san_francisco-webfont.woff') format('woff');
+  font-family: 'San Francisco', Arial, sans-serif;
+  src: url('fonts/san_francisco-webfont.woff2') format('woff2'),
+       url('fonts/san_francisco-webfont.woff') format('woff');
 }
 
 @font-face {
@@ -429,7 +429,7 @@ table, th, td {
 
 .event-info {
   text-align: center;
-  font-family: 'San Francisco Regular';
+  font-family: 'San Francisco', Arial, sans-serif;
 }
 
 .event-info h1 {
