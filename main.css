@@ -26,8 +26,8 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fields
 
 
 h1 {
-  font-size: 24px; /* Adjust the font size as per your preference */
-  font-family: 'Playfair Display Regular';
+	font-size: 24px; /* Adjust the font size as per your preference */
+	font-family: 'Playfair Display Regular';
 }
 
 h2 {
