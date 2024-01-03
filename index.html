@@ -580,55 +580,173 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 
 
 <style>
-	table {
-		width: 100%;
-		border-collapse: collapse;
-		border: none;
-		color: #3f3f3f;
-	}
+    body {
+      margin: 0;
+      font-family: 'Helvetica', sans-serif;
+    }
 
-	th, td {
-		padding: 15px;
-		text-align: left;
-		border: none;
-		color: #3f3f3f;
-	}
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
 
-	tr {
-		border-bottom: 1px solid rgb(215, 215, 215);
-		color: #3f3f3f;
-	}
+    .controls {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      z-index: 1;
+    }
 
-	th {
-		font-weight: bold;
-		color: #3f3f3f;
-	}
-</style>
+    .control {
+      background-color: #3d414a;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 24px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s;
+    }
 
-<div class="strip">
-    <h1 align="center"><font size="6"><font color="#3f3f3f">Conference Details</font></font></h1>
-	<br /><br />
-    <table>
-		<tr>
+    .control:hover {
+      background-color: #2a2a2a;
+    }
 
-		</tr>
-        <tr>
-            <th>Conference Dates</th>
-            <td>January 5 - 6, 2024</td>
-        </tr>
-        <tr>
-            <th>Venue</th>
-            <td>
-                Indian Institute of Management Ranchi<br>
-                Prabandhan Nagar, Nayasarai Road,<br>
-                Ranchi 835 303, Jharkhand, India<br>
-                Indian Institute Of Management (IIM) Ranchi
-                <br>
-                <a href="https://goo.gl/maps/LE9i7Fz9jx7ZrnVK7" target="_blank">View on Map</a>
-            </td>
-        </tr>
-    </table>
+    .screen {
+      display: flex;
+      transition: transform 0.3s ease;
+    }
+
+    .track {
+      display: flex;
+    }
+
+    .item {
+      flex: 0 0 100%;
+      box-sizing: border-box;
+      padding: 0 16px;
+    }
+
+    .demo-content {
+      color: #fff;
+      font-weight: 100;
+      text-transform: uppercase;
+      border-radius: 3px;
+      font-size: 32px;
+      height: 600px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .demo-content img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+	.image-text-name {
+      position: absolute;
+      right: 25px;
+      bottom: 35px;
+      color: #fff;
+      font-size: 28px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 5px;
+      border-radius: 3px;
+    }
+	.image-text-designation {
+      position: absolute;
+      right: 25px;
+      bottom: 10px;
+      color: #fff;
+      font-size: 14px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 5px;
+      border-radius: 3px;
+    }
+  </style>
+
+
+<h1 align="center"><font size="6"><font color="#2a2a2a">Speakers</font></font></h1>
+<div class="wsite-spacer" style="height:50px;"></div>
+<div class="carousel">
+  <div class="controls">
+    <button class="control prev" onclick="prevSlide()">&#8249;</button>
+    <button class="control next" onclick="nextSlide()">&#8250;</button>
+  </div>
+
+  <div class="screen">
+    <div class="track">
+      <!-- Repeat the following block for each image item -->
+      <div class="item">
+        <div class="demo-content">
+          <img src="img/speaker-photos/Dr Dubat Kumar.jpg" alt="Image 1">
+		  <div class="image-text-name">Dr. Dubat Kumar</div>
+		  <div class="image-text-designation">Professor, XYZ Institute</div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="demo-content">
+          <img src="img/speaker-photos/Patnaik Sir.jpg" alt="Image 2">
+        </div>
+      </div>
+      <div class="item">
+        <div class="demo-content">
+          <img src="img/speaker-photos/Saamdu Sir.jpg" alt="Image 3">
+        </div>
+      </div>
+      <!-- Repeat the block for each image item -->
+	  <div class="item">
+        <div class="demo-content">
+          <img src="img/speaker-photos/Dr Dubat Kumar.jpg" alt="Image 1">
+        </div>
+      </div>
+      <div class="item">
+        <div class="demo-content">
+          <img src="img/speaker-photos/Patnaik Sir.jpg" alt="Image 2">
+        </div>
+      </div>
+      <div class="item">
+        <div class="demo-content">
+          <img src="img/speaker-photos/Saamdu Sir.jpg" alt="Image 3">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<script>
+  let currentIndex = 0;
+  const totalItems = document.querySelectorAll('.item').length;
+
+  function updateCarousel() {
+    const newPosition = -currentIndex * 100 + '%';
+    document.querySelector('.screen').style.transform = 'translateX(' + newPosition + ')';
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalItems;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+    updateCarousel();
+  }
+</script>
+
+
+
+	<div class="wsite-spacer" style="height:50px;"></div>
+
 
 
 
